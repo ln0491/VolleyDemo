@@ -10,7 +10,7 @@
     git clone https://android.googlesource.com/platform/frameworks/volley
 
 自备梯子
-
+在AndroidStudio中Dependencies中搜索
 或者访问
 
 <https://github.com/mcxiaoke/android-volley> 镜像地址
