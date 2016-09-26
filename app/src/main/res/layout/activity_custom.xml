@@ -2,7 +2,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_pic"
+    android:id="@+id/activity_custom"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -10,44 +10,34 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="com.liu.volleydemo.PicActivity">
-
+    tools:context="com.liu.volleydemo.CustomActivity">
     <Button
-        android:id="@+id/btnGetnetPic"
-        android:text="加载网络图片"
+        android:id="@+id/btnGetXml"
+        android:text="加载XML"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <Button
-        android:id="@+id/btnGetnetPic2"
-        android:text="加载网络图片2"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <Button
-        android:id="@+id/btnGetnetPic3"
-        android:text="加载网络图片3"
+        android:id="@+id/btnGetGson"
+        android:text="加载Gson"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
 
 
-    <ImageView
-        android:id="@+id/iv1"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <ImageView
-        android:id="@+id/iv2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <com.android.volley.toolbox.NetworkImageView
-        android:id="@+id/networkIv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="30"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
 
 </LinearLayout>

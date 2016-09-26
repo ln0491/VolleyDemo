@@ -68,6 +68,12 @@
             android:text="加载网格力图片"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
 
+        <Button
+            android:id="@+id/getCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取自定义的Request"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
 
 
         <TextView

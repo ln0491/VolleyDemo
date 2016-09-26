@@ -19,6 +19,8 @@
         </activity>
         <activity android:name=".PicActivity">
         </activity>
+        <activity android:name=".CustomActivity">
+        </activity>
     </application>
 
 </manifest>

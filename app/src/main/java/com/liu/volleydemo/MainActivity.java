@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
     Button       mJsonArrayRequestPost;
     @Bind(R.id.getNetWorkPic)
     Button       mGetNetWorkPic;
+    @Bind(R.id.getCustom)
+    Button       mGetCustom;
 
 
     @Override
@@ -67,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         MyVolley.getRequestQueue(this);
     }
 
-    @OnClick({R.id.stringRequestGet, R.id.stringRequestPost, R.id.jsonObjectRequestGet, R.id.jsonObjectRequestPost, R.id.jsonArrayRequestGet, R.id.jsonArrayRequestPost,R.id.getNetWorkPic})
+    @OnClick({R.id.stringRequestGet, R.id.stringRequestPost, R.id.jsonObjectRequestGet, R.id.jsonObjectRequestPost, R.id.jsonArrayRequestGet, R.id.jsonArrayRequestPost,R.id.getNetWorkPic,R.id.getCustom})
     public void onClick(View view) {
         switch(view.getId()) {
             case R.id.stringRequestGet:
@@ -90,7 +92,18 @@ public class MainActivity extends AppCompatActivity {
             case R.id.getNetWorkPic:
                 goPicActivity();
                 break;
+            case R.id.getCustom:
+                goCustom();
+                break;
         }
+    }
+
+    private void goCustom() {
+        Intent intent = new Intent(this,CustomActivity.class);
+
+        startActivity(intent);
+
+
     }
 
     private void goPicActivity() {
