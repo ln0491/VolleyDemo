@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.liu.volleydemo.MainActivity">
+
+    <LinearLayout
+
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        >
+
+
+        <Button
+            android:id="@+id/stringRequestGet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="stringRequestGet请求"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
+
+        <Button
+            android:id="@+id/stringRequestPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="stringRequestPost请求"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
+
+
+        <Button
+            android:id="@+id/jsonObjectRequestGet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="jsonObjectRequestGet请求"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
+
+        <Button
+            android:id="@+id/jsonObjectRequestPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="jsonObjectRequestPost请求"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
+        <Button
+            android:id="@+id/jsonArrayRequestGet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="jsonArrayRequestGet请求"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
+
+
+        <Button
+            android:id="@+id/jsonArrayRequestPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="jsonArrayRequestPostPost请求"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
+
+        <Button
+            android:id="@+id/getNetWorkPic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="加载网格力图片"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
+
+
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"/>
+    </LinearLayout>
+</ScrollView>
